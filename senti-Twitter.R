@@ -62,7 +62,7 @@ print("Sentiment analysis done!")
 tweets <- cbind(tweetsText, Sentiment)
 print ("binding to sentiment done")
 sentimentTotals <- data.frame(colSums(tweetsText[,c(11:18)]))
-print("data frame column shit done")
+print("data frame column done")
 names(sentimentTotals) <- "count"
 sentimentTotals <- cbind("sentiment" = rownames(sentimentTotals), sentimentTotals)
 rownames(sentimentTotals) <- NULL
